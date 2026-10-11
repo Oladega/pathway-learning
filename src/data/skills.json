@@ -1,0 +1,202 @@
+[
+  {
+    "name": "Python",
+    "category": "Programming"
+  },
+  {
+    "name": "JavaScript",
+    "category": "Programming"
+  },
+  {
+    "name": "TypeScript",
+    "category": "Programming"
+  },
+  {
+    "name": "SQL",
+    "category": "Programming"
+  },
+  {
+    "name": "Git",
+    "category": "Engineering"
+  },
+  {
+    "name": "Debugging",
+    "category": "Engineering"
+  },
+  {
+    "name": "Testing",
+    "category": "Engineering"
+  },
+  {
+    "name": "Data structures",
+    "category": "Engineering"
+  },
+  {
+    "name": "Algorithms",
+    "category": "Engineering"
+  },
+  {
+    "name": "OOP",
+    "category": "Engineering"
+  },
+  {
+    "name": "System design",
+    "category": "Engineering"
+  },
+  {
+    "name": "REST APIs",
+    "category": "Backend"
+  },
+  {
+    "name": "FastAPI",
+    "category": "Backend"
+  },
+  {
+    "name": "Authentication",
+    "category": "Backend"
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Backend"
+  },
+  {
+    "name": "Async programming",
+    "category": "Backend"
+  },
+  {
+    "name": "React",
+    "category": "Frontend"
+  },
+  {
+    "name": "Next.js",
+    "category": "Frontend"
+  },
+  {
+    "name": "State management",
+    "category": "Frontend"
+  },
+  {
+    "name": "Accessibility",
+    "category": "Frontend"
+  },
+  {
+    "name": "Linear algebra",
+    "category": "Mathematics"
+  },
+  {
+    "name": "Probability",
+    "category": "Mathematics"
+  },
+  {
+    "name": "Statistics",
+    "category": "Mathematics"
+  },
+  {
+    "name": "Calculus",
+    "category": "Mathematics"
+  },
+  {
+    "name": "Optimization",
+    "category": "Mathematics"
+  },
+  {
+    "name": "Data preprocessing",
+    "category": "Machine learning"
+  },
+  {
+    "name": "Feature engineering",
+    "category": "Machine learning"
+  },
+  {
+    "name": "Regression",
+    "category": "Machine learning"
+  },
+  {
+    "name": "Classification",
+    "category": "Machine learning"
+  },
+  {
+    "name": "Model evaluation",
+    "category": "Machine learning"
+  },
+  {
+    "name": "scikit-learn",
+    "category": "Machine learning"
+  },
+  {
+    "name": "Neural networks",
+    "category": "Deep learning"
+  },
+  {
+    "name": "Backpropagation",
+    "category": "Deep learning"
+  },
+  {
+    "name": "PyTorch",
+    "category": "Deep learning"
+  },
+  {
+    "name": "Transformers",
+    "category": "Deep learning"
+  },
+  {
+    "name": "Fine-tuning",
+    "category": "Deep learning"
+  },
+  {
+    "name": "Model APIs",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Prompting",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Structured outputs",
+    "category": "AI engineering"
+  },
+  {
+    "name": "RAG",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Embeddings",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Tool calling",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Agents",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Evaluations",
+    "category": "AI engineering"
+  },
+  {
+    "name": "AI security",
+    "category": "AI engineering"
+  },
+  {
+    "name": "Docker",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "CI/CD",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Cloud",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Monitoring",
+    "category": "Infrastructure"
+  },
+  {
+    "name": "Performance optimization",
+    "category": "Infrastructure"
+  }
+]

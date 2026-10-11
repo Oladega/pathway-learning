@@ -1,0 +1,122 @@
+[
+  {
+    "level": 1,
+    "name": "CS50 Introduction to Programming with Python",
+    "provider": "Harvard · Free",
+    "url": "https://cs50.harvard.edu/python/",
+    "alternative": "100 Days of Code: Python Bootcamp",
+    "author": "Angela Yu · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/100-days-of-code/",
+    "phase": "python",
+    "duration": "Weeks 1–8",
+    "note": "Use as your primary foundation. Do assignments without copying solutions."
+  },
+  {
+    "level": 2,
+    "name": "CS50x: Introduction to Computer Science",
+    "provider": "Harvard · Free",
+    "url": "https://cs50.harvard.edu/x/",
+    "alternative": "Python Data Structures and Algorithms",
+    "author": "Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/algorithms-and-data-structures-in-python/",
+    "phase": "python",
+    "duration": "Weeks 5–12",
+    "note": "Focus on memory, problem-solving, algorithms and data structures."
+  },
+  {
+    "level": 3,
+    "name": "FastAPI Official Tutorial",
+    "provider": "FastAPI · Free",
+    "url": "https://fastapi.tiangolo.com/tutorial/",
+    "alternative": "FastAPI: The Complete Course",
+    "author": "Eric Roby · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/fastapi-the-complete-course/",
+    "phase": "backend",
+    "duration": "Weeks 9–16",
+    "note": "Build real APIs with authentication, databases and tests."
+  },
+  {
+    "level": 4,
+    "name": "SQLBolt Interactive SQL Lessons",
+    "provider": "SQLBolt · Free",
+    "url": "https://sqlbolt.com/",
+    "alternative": "The Complete SQL Bootcamp",
+    "author": "Jose Portilla · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/the-complete-sql-bootcamp/",
+    "phase": "backend",
+    "duration": "Weeks 11–16",
+    "note": "Apply database concepts inside your FastAPI projects."
+  },
+  {
+    "level": 5,
+    "name": "Full Stack Open",
+    "provider": "University of Helsinki · Free",
+    "url": "https://fullstackopen.com/en/",
+    "alternative": "React: The Complete Guide",
+    "author": "Maximilian Schwarzmüller · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/react-the-complete-guide-incl-redux/",
+    "phase": "fullstack",
+    "duration": "Weeks 17–24",
+    "note": "Learn JavaScript first at javascript.info, then React and TypeScript."
+  },
+  {
+    "level": 6,
+    "name": "Hugging Face Agents Course",
+    "provider": "Hugging Face · Free",
+    "url": "https://huggingface.co/learn/agents-course/en/unit0/introduction",
+    "alternative": "LangChain & LangGraph Agentic AI",
+    "author": "Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/langchain/",
+    "phase": "llm",
+    "duration": "Weeks 25–32",
+    "note": "Understand model APIs, tool calling and evaluations before framework abstractions."
+  },
+  {
+    "level": 7,
+    "name": "Mathematics for Machine Learning",
+    "provider": "Imperial College London · Coursera",
+    "url": "https://www.coursera.org/specializations/mathematics-machine-learning",
+    "alternative": "Mathematical Foundations of Machine Learning",
+    "author": "Jon Krohn · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/machine-learning-data-science-foundations-masterclass/",
+    "phase": "ml",
+    "duration": "Weeks 33–36",
+    "note": "Review linear algebra, calculus, probability and statistics."
+  },
+  {
+    "level": 8,
+    "name": "Machine Learning Specialization",
+    "provider": "Andrew Ng · Coursera",
+    "url": "https://www.coursera.org/specializations/machine-learning-introduction",
+    "alternative": "Machine Learning A–Z",
+    "author": "Kirill Eremenko · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/machinelearning/",
+    "phase": "ml",
+    "duration": "Weeks 35–40",
+    "note": "Learn classical ML concepts and implement them with scikit-learn."
+  },
+  {
+    "level": 9,
+    "name": "Practical Deep Learning for Coders",
+    "provider": "fast.ai · Free",
+    "url": "https://course.fast.ai/",
+    "alternative": "PyTorch for Deep Learning Bootcamp",
+    "author": "Daniel Bourke · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/pytorch-for-deep-learning/",
+    "phase": "production",
+    "duration": "Weeks 41–46",
+    "note": "Train, evaluate and serve a neural-network model."
+  },
+  {
+    "level": 10,
+    "name": "Made With ML",
+    "provider": "Made With ML · Free",
+    "url": "https://madewithml.com/",
+    "alternative": "MLOps Zero to Hero",
+    "author": "Abhishek Veeramalla · Udemy",
+    "alternativeUrl": "https://www.udemy.com/course/mlops-zero-to-hero/",
+    "phase": "production",
+    "duration": "Weeks 46–50",
+    "note": "Production pipelines, model testing, monitoring and deployment."
+  }
+]
