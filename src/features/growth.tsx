@@ -38,6 +38,14 @@ export function Projects({ selected }: { selected: string }) {
       (s) => ({
         ...s,
         projects: s.projects.map((x) => (x.id === id ? { ...x, ...patch } : x)),
+        tasks:
+          patch.status && patch.status !== "completed"
+            ? s.tasks.map((t) =>
+                id === `week-${t.week}` && t.type === "deliverable"
+                  ? { ...t, status: "not_started", completedAt: null }
+                  : t,
+              )
+            : s.tasks,
       }),
       label,
       `/projects?id=${id}`,

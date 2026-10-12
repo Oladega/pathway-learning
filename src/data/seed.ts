@@ -188,26 +188,62 @@ export function addDays(day: string, n: number) {
     .toISOString()
     .slice(0, 10);
 }
+const weekSkillMap: Record<number, string[]> = {
+  1: ["Python"],
+  2: ["Python", "Data structures"],
+  3: ["Python", "Debugging"],
+  4: ["Python", "OOP", "Testing"],
+  5: ["Algorithms", "Data structures"],
+  6: ["Algorithms", "Data structures"],
+  7: ["Python", "REST APIs"],
+  8: ["Python", "Git", "Testing"],
+  9: ["REST APIs"],
+  10: ["FastAPI", "REST APIs"],
+  11: ["SQL", "PostgreSQL"],
+  12: ["PostgreSQL", "FastAPI"],
+  13: ["Authentication", "AI security"],
+  14: ["Testing", "Debugging"],
+  15: ["Async programming"],
+  16: ["FastAPI", "Authentication", "Cloud"],
+  17: ["JavaScript"],
+  18: ["TypeScript"],
+  19: ["React", "State management"],
+  20: ["React", "REST APIs"],
+  21: ["Next.js"],
+  22: ["Accessibility", "Testing"],
+  23: ["CI/CD", "Cloud"],
+  24: ["React", "Next.js", "TypeScript", "FastAPI", "PostgreSQL"],
+  25: ["Model APIs", "Prompting"],
+  26: ["Model APIs", "Structured outputs", "Tool calling"],
+  27: ["Embeddings"],
+  28: ["RAG", "Embeddings", "PostgreSQL"],
+  29: ["Agents", "Tool calling", "State management"],
+  30: ["Evaluations"],
+  31: ["AI security", "Monitoring"],
+  32: ["RAG", "Agents", "Evaluations", "Cloud"],
+  33: ["Linear algebra"],
+  34: ["Probability", "Statistics"],
+  35: ["Calculus", "Optimization", "Regression"],
+  36: ["Regression", "Model evaluation"],
+  37: ["Classification", "scikit-learn"],
+  38: ["Feature engineering", "Data preprocessing"],
+  39: ["Model evaluation"],
+  40: ["Model evaluation", "REST APIs", "Cloud"],
+  41: ["Neural networks", "Backpropagation", "PyTorch"],
+  42: ["PyTorch", "Classification"],
+  43: ["Transformers", "Linear algebra"],
+  44: ["Model APIs", "REST APIs"],
+  45: ["Fine-tuning", "Model evaluation"],
+  46: ["System design", "Performance optimization"],
+  47: ["Monitoring"],
+  48: ["Docker", "CI/CD", "Cloud"],
+  49: ["AI security", "Performance optimization"],
+  50: ["Git", "System design"],
+  51: ["Algorithms", "SQL", "Debugging", "System design"],
+  52: ["Git"],
+};
 export function weekSkills(n: number): string[] {
-  const w = weeks[n - 1];
-  const names = skills
-    .filter((s) =>
-      w.topics.join(" ").toLowerCase().includes(s.name.toLowerCase()),
-    )
-    .map((s) => s.name);
-  return [
-    ...new Set([
-      ...(n <= 16
-        ? ["Python"]
-        : n <= 24
-          ? ["TypeScript"]
-          : n <= 32
-            ? ["Model APIs"]
-            : ["Python"]),
-      ...names,
-      "Testing",
-    ]),
-  ];
+  return [...new Set([...(weekSkillMap[n] ?? []), "Testing"])];
 }
 export function createInitial(today = isoDay()): State {
   const tasks = weeks.flatMap((w) =>

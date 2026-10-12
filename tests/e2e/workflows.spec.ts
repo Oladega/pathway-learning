@@ -33,6 +33,7 @@ test("onboarding, course choice, lesson completion, task completion and reload",
   page,
 }) => {
   await onboard(page);
+  await page.screenshot({path:"artifacts/dashboard-desktop.png",fullPage:true});
   await page
     .getByRole("link", { name: "Continue learning", exact: true })
     .click();
@@ -229,15 +230,18 @@ test("notes autosave, settings, export and invalid import", async ({
   await page.getByRole("button", { name: "Export JSON backup" }).click();
   expect((await download).suggestedFilename()).toContain("pathway");
   page.on("dialog", (d) => d.accept());
-  await page
-    .getByLabel("Import a validated backup")
-    .setInputFiles({
-      name: "invalid.json",
-      mimeType: "application/json",
-      buffer: Buffer.from('{"version":2}'),
-    });
+  await page.getByLabel("Import a validated backup").setInputFiles({
+    name: "invalid.json",
+    mimeType: "application/json",
+    buffer: Buffer.from('{"version":2}'),
+  });
   await expect(page.locator(".toast.error")).toBeVisible();
   expect((await snapshot(page)).preferences.name).toBe("Ada");
+  const backup=await snapshot(page);await page.getByRole('button',{name:'Dismiss'}).click();
+  await page.getByLabel('Name',{exact:true}).fill('Grace');await page.getByRole('button',{name:'Save preferences',exact:true}).click();
+  await expect.poll(async()=>{const s=await snapshot(page);return s.preferences.name;}).toBe('Grace');
+  await page.getByLabel('Import a validated backup').setInputFiles({name:'valid.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(backup))});
+  await expect.poll(async()=>{const s=await snapshot(page);return s.preferences.name;}).toBe('Ada');await page.reload();await expect(page.getByLabel('Name',{exact:true})).toHaveValue('Ada');
 });
 test("mobile navigation, command search, all routes and disabled mentor", async ({
   page,
@@ -290,4 +294,21 @@ test("mobile navigation, command search, all routes and disabled mentor", async 
   await page.keyboard.press("Enter");
   await expect(page.getByRole("dialog")).toContainText("Week 52");
   await saved(page);
+});
+
+test('failed storage writes roll back progress and retain the previous backup',async({page})=>{
+ await onboard(page);await page.goto('/courses?lesson=lesson-1');
+ await page.evaluate(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(key,value){if(key==='pathway-v2')throw new DOMException('Storage quota exceeded','QuotaExceededError');original.call(this,key,value);};});
+ await page.getByRole('button',{name:'Mark lesson complete'}).click();
+ await expect(page.locator('.toast.error')).toContainText('Storage quota exceeded');
+ await expect(page.getByRole('button',{name:'Mark lesson complete'})).toBeVisible();
+ expect((await snapshot(page)).lessons[0].done).toBe(false);
+});
+
+test('same-route search opens the selected week and note edits persist on immediate navigation',async({page})=>{
+ await onboard(page);await page.goto('/roadmap?week=1');await page.getByRole('button',{name:'Close dialog'}).click();
+ await page.keyboard.press('Control+k');await page.getByLabel('Search workspace').fill('Week 52');await page.keyboard.press('Enter');
+ await expect(page.getByRole('dialog')).toContainText('Week 52');await page.getByRole('button',{name:'Close dialog'}).click();
+ await page.goto('/notes');await page.getByRole('button',{name:'New note'}).click();await page.getByLabel('Note title').fill('Immediate save');await page.getByLabel('Markdown note').fill('Saved before navigation');await page.getByRole('link',{name:'Overview',exact:true}).click();
+ await expect.poll(async()=>{const s=await snapshot(page);return s.notes[0].body;}).toBe('Saved before navigation');await page.goto('/notes');await expect(page.getByRole('button',{name:/Immediate save/})).toBeVisible();
 });

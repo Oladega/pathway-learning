@@ -14,7 +14,14 @@ import {
   num,
   uuid,
 } from "../components/ui";
-import { weeks, phases, courses, isoDay, addDays } from "../data/seed";
+import {
+  weeks,
+  phases,
+  courses,
+  isoDay,
+  addDays,
+  weekSkills,
+} from "../data/seed";
 import {
   weekProgress,
   phaseProgress,
@@ -330,7 +337,11 @@ export function TaskRow({ task }: { task: Task }) {
       >
         <b>{task.title}</b>
         <small>
-          {task.type} · {task.estimate / 60}h · {task.priority} priority
+          {task.type} · {task.estimate / 60}h estimated ·{" "}
+          {state.sessions
+            .filter((s) => s.taskId === task.id)
+            .reduce((sum, s) => sum + s.duration, 0)}
+          m recorded · {task.priority} priority
           {task.scheduled < isoDay() && task.status !== "completed"
             ? " · overdue"
             : ""}
@@ -525,6 +536,26 @@ export function Roadmap({ selected }: { selected: number }) {
                 <li key={o}>{o}</li>
               ))}
             </ul>
+            <h3>Skills developed</h3>
+            <div className="tags">
+              {weekSkills(active.number).map((skill) => (
+                <Link href="/skills" key={skill}>
+                  {skill}
+                </Link>
+              ))}
+            </div>
+            <h3>Practice exercises</h3>
+            <ul>
+              {active.practiceExercises.map((ex) => (
+                <li key={ex}>{ex}</li>
+              ))}
+            </ul>
+            <p className="muted">
+              Suggested hours: {active.hourAllocation.concepts} concepts ·{" "}
+              {active.hourAllocation.practice} practice ·{" "}
+              {active.hourAllocation.assessment} assessment ·{" "}
+              {active.hourAllocation.project} project.
+            </p>
             <h3>Practice independently</h3>
             <p>{active.exercise}</p>
             <h3>Deliverable: {active.deliverable}</h3>
@@ -601,7 +632,8 @@ export function TaskEditor({
   task: Task | null;
   onClose: () => void;
 }) {
-  const { mutate } = useStore();
+  const { state, mutate } = useStore();
+  task = state.tasks.find((t) => t.id === task?.id) ?? task;
   return (
     <Modal title="Edit learning task" open={!!task} onClose={onClose}>
       {task && (
@@ -739,7 +771,7 @@ export function Courses({ level }: { level: number }) {
     [q, setQ] = useState(""),
     [phase, setPhase] = useState("all"),
     [view, setView] = useState("Grid"),
-    [detail, setDetail] = useState(level || 0);
+    [detail, setDetail] = useState(level>=1&&level<=10?level:0);
   return (
     <>
       <Header
@@ -1062,6 +1094,39 @@ export function LessonDetail({ id }: { id: string }) {
           Completing a topic updates course and roadmap learning progress.
           Practical work and evidence remain separate.
         </p>
+        <details>
+          <summary>Edit your tracked lesson</summary>
+          <form
+            key={lesson.id}
+            onSubmit={(e) => {
+              e.preventDefault();
+              const f = new FormData(e.currentTarget);
+              mutate(
+                (s) => ({
+                  ...s,
+                  lessons: s.lessons.map((l) =>
+                    l.id === id
+                      ? {
+                          ...l,
+                          title: str(f, "title"),
+                          section: str(f, "section"),
+                        }
+                      : l,
+                  ),
+                }),
+                "Lesson details updated",
+              );
+            }}
+          >
+            <Field label="Lesson title">
+              <input name="title" defaultValue={lesson.title} required />
+            </Field>
+            <Field label="Lesson section">
+              <input name="section" defaultValue={lesson.section} required />
+            </Field>
+            <button>Save lesson details</button>
+          </form>
+        </details>
         <h3>Related work</h3>
         {state.tasks
           .filter((t) => t.week === lesson.week && t.type !== "lesson")

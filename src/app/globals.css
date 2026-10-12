@@ -1503,3 +1503,16 @@ th {
 .field > label {
   font-weight: 500;
 }
+.metric-row > span,
+.list-item > div,
+.week-card b,
+.project-card h2,
+.task-row b,
+.course-card h2 {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.markdown img {
+  max-width: 100%;
+  height: auto;
+}

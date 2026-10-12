@@ -28,14 +28,14 @@ export function mentorContext(state: State) {
     completed: state.tasks
       .filter((t) => t.status === "completed")
       .map((t) => t.title)
-      .slice(-50),
+      .slice(-30),
     projects: state.projects
       .filter((p) =>
         ["in_progress", "in_review", "completed"].includes(p.status),
       )
-      .map((p) => ({ title: p.title, status: p.status, criteria: p.criteria })),
-    skills: state.skills,
-    evidence: state.evidence.slice(-20),
-    studyHistory: state.sessions.slice(-10),
+      .slice(0,10).map((p) => ({ title: p.title, status: p.status, criteria: p.criteria.slice(0,6) })),
+    skills: Object.fromEntries(Object.entries(state.skills).slice(0,60)),
+    evidence: state.evidence.slice(-20).map(e=>({skill:e.skill,title:e.title,kind:e.kind})),
+    studyHistory: state.sessions.slice(-5).map(s=>({date:s.date,duration:s.duration,subject:s.subject,learned:s.learned.slice(0,600),challenges:s.challenges.slice(0,300),assistance:s.assistance})),
   };
 }

@@ -14,6 +14,7 @@ export function Planner() {
     [edit, setEdit] = useState<Task | null>(null),
     [adding, setAdding] = useState(false),
     [confirm, setConfirm] = useState(false),
+    [confirmationId, setConfirmationId] = useState(""),
     [seconds, setSeconds] = useState(timerSeconds(state.timer));
   useEffect(() => {
     const tick = () => setSeconds(timerSeconds(state.timer));
@@ -63,9 +64,13 @@ export function Planner() {
         : null,
     }));
   }
+  function openLog() {
+    setConfirmationId(uuid());
+    setConfirm(true);
+  }
   function stop() {
     pause();
-    setConfirm(true);
+    openLog();
   }
   const days = Array.from({ length: 7 }, (_, i) => addDays(start, i));
   return (
@@ -202,7 +207,7 @@ export function Planner() {
         </button>
         <button onClick={() => setStart(monday())}>This week</button>
         <button onClick={() => setStart(addDays(start, 7))}>Next week →</button>
-        <button onClick={() => setConfirm(true)}>Log time manually</button>
+        <button onClick={openLog}>Log time manually</button>
       </div>
       {view === "Calendar" && (
         <div className="calendar">
@@ -502,21 +507,23 @@ export function Planner() {
             mutate(
               (s) => ({
                 ...s,
-                sessions: [
-                  ...s.sessions,
-                  {
-                    id: uuid(),
-                    date: str(f, "date"),
-                    duration,
-                    taskId: str(f, "task"),
-                    courseLevel: s.timer?.courseLevel ?? 0,
-                    subject: str(f, "subject"),
-                    learned: str(f, "learned"),
-                    challenges: str(f, "challenges"),
-                    confidence: num(f, "confidence"),
-                    assistance: str(f, "assistance") as Task["assistance"],
-                  },
-                ],
+                sessions: s.sessions.some((log) => log.id === confirmationId)
+                  ? s.sessions
+                  : [
+                      ...s.sessions,
+                      {
+                        id: confirmationId,
+                        date: str(f, "date"),
+                        duration,
+                        taskId: str(f, "task"),
+                        courseLevel: s.timer?.courseLevel ?? 0,
+                        subject: str(f, "subject"),
+                        learned: str(f, "learned"),
+                        challenges: str(f, "challenges"),
+                        confidence: num(f, "confidence"),
+                        assistance: str(f, "assistance") as Task["assistance"],
+                      },
+                    ],
                 timer: null,
               }),
               "Study session recorded",

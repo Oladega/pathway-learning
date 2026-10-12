@@ -139,7 +139,7 @@ alter table public.skill_evidence add constraint evidence_project foreign key(us
 create index tasks_week_idx on public.learning_tasks(user_id,week_number);
 create index sessions_date_idx on public.study_sessions(user_id,((payload->>'date')));
 create index evidence_project_idx on public.skill_evidence(user_id,project_id);
-create table public.mentor_rate_limits(user_id uuid not null references auth.users(id) on delete cascade, window timestamptz not null, requests integer not null check(requests between 1 and 6), primary key(user_id,window));
+create table public.mentor_rate_limits(user_id uuid not null references auth.users(id) on delete cascade, bucket_start timestamptz not null, requests integer not null check(requests between 1 and 6), primary key(user_id,bucket_start));
 alter table public.profiles enable row level security;
 create policy tenant_access on public.profiles for all to authenticated using(user_id=auth.uid()) with check(user_id=auth.uid());
 grant select,insert,update,delete on public.profiles to authenticated;
@@ -351,9 +351,9 @@ create function public.claim_mentor_request() returns boolean language plpgsql s
 declare uid uuid:=auth.uid(); bucket timestamptz:=date_trunc('minute',now()); used integer;
 begin
  if uid is null then raise exception 'authentication required'; end if;
- delete from public.mentor_rate_limits where user_id=uid and window<now()-interval '1 hour';
- insert into public.mentor_rate_limits(user_id,window,requests) values(uid,bucket,1)
- on conflict(user_id,window) do update set requests=mentor_rate_limits.requests+1 where mentor_rate_limits.requests<6 returning requests into used;
+ delete from public.mentor_rate_limits where user_id=uid and bucket_start<now()-interval '1 hour';
+ insert into public.mentor_rate_limits(user_id,bucket_start,requests) values(uid,bucket,1)
+ on conflict(user_id,bucket_start) do update set requests=mentor_rate_limits.requests+1 where mentor_rate_limits.requests<6 returning requests into used;
  return used is not null;
 end; $$;
 revoke all on function public.load_learning_state() from public,anon;

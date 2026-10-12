@@ -49,7 +49,14 @@ export function Provider({ children }: { children: React.ReactNode }) {
     pending = useRef(0);
   useEffect(() => {
     let live = true;
+    let lastUser: string | null | undefined = undefined;
     async function init(auth: AuthSession | null) {
+      const uid = auth?.user.id ?? null;
+      if (lastUser === uid) {
+        setSession(auth);
+        return;
+      }
+      lastUser = uid;
       loaded.current = false;
       setReady(false);
       setSession(auth);
@@ -185,6 +192,8 @@ export function Provider({ children }: { children: React.ReactNode }) {
       const s = createInitial();
       current.current = s;
       setState(s);
+      loaded.current = true;
+      setError("");
       setNotice("Learning data deleted");
     } catch (e) {
       setError(e instanceof Error ? e.message : "Deletion failed");
@@ -207,6 +216,19 @@ export function Provider({ children }: { children: React.ReactNode }) {
           resetting.
         </p>
         <button onClick={() => setRetry((n) => n + 1)}>Retry</button>
+        <button
+          className="danger"
+          onClick={() => {
+            if (
+              window.confirm(
+                "Permanently erase the unreadable learning data? Download a backup first.",
+              )
+            )
+              void reset();
+          }}
+        >
+          Reset unreadable learning data
+        </button>
         {mode === "local" && (
           <button
             onClick={() => {
@@ -243,8 +265,10 @@ export function Provider({ children }: { children: React.ReactNode }) {
               (s) => ({ ...imported, revision: s.revision }),
               "Backup imported",
             );
-          } catch (e) {
-            setError("This backup is incomplete or invalid. Existing records were not changed.");
+          } catch {
+            setError(
+              "This backup is incomplete or invalid. Existing records were not changed.",
+            );
           }
         },
         session,

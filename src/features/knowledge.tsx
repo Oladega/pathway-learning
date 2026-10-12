@@ -46,8 +46,16 @@ export function Notes({ selected }: { selected: string }) {
     setDirty(false);
   }
   function change(patch: Partial<Note>) {
-    if(!draft)return;const next={...draft,...patch,updatedAt:stamp()};setDraft(next);
-    if(next.title.trim()){mutate(s=>({...s,notes:s.notes.map(n=>n.id===next.id?next:n)}));setDirty(false);}else setDirty(true);
+    if (!draft) return;
+    const next = { ...draft, ...patch, updatedAt: stamp() };
+    setDraft(next);
+    if (next.title.trim()) {
+      mutate((s) => ({
+        ...s,
+        notes: s.notes.map((n) => (n.id === next.id ? next : n)),
+      }));
+      setDirty(false);
+    } else setDirty(true);
   }
   return (
     <>

@@ -224,7 +224,7 @@ export const phases: Phase[] = [
   },
   {
     id: "ml",
-    name: "Math & Machine Learning",
+    name: "Mathematics & Machine Learning",
     short: "Statistics, models & evaluation",
     range: "Weeks 33–40",
     description: "Understand why models work and train your own.",
@@ -274,7 +274,7 @@ export const phases: Phase[] = [
   },
   {
     id: "production",
-    name: "Deep Learning & Production",
+    name: "Deep Learning, Production & Careers",
     short: "PyTorch, infrastructure & career",
     range: "Weeks 41–52",
     description: "Build, ship and defend the architecture of real AI systems.",

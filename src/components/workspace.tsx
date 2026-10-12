@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import {
@@ -32,9 +33,28 @@ import {
   LessonDetail,
 } from "../features/learning";
 import { Planner } from "../features/planner";
-import { Notes, Resources } from "../features/knowledge";
-import { Projects, Skills, Analytics } from "../features/growth";
-import { Career, Mentor } from "../features/career";
+const Notes = dynamic(
+  () => import("../features/knowledge").then((m) => m.Notes),
+  { loading: () => <p role="status">Loading notes…</p> },
+);
+const Resources = dynamic(() =>
+  import("../features/knowledge").then((m) => m.Resources),
+);
+const Projects = dynamic(() =>
+  import("../features/growth").then((m) => m.Projects),
+);
+const Skills = dynamic(() =>
+  import("../features/growth").then((m) => m.Skills),
+);
+const Analytics = dynamic(() =>
+  import("../features/growth").then((m) => m.Analytics),
+);
+const Career = dynamic(() =>
+  import("../features/career").then((m) => m.Career),
+);
+const Mentor = dynamic(() =>
+  import("../features/career").then((m) => m.Mentor),
+);
 import { Onboarding, SettingsPage } from "../features/settings";
 const nav = [
   ["dashboard", "Overview", LayoutDashboard],
@@ -96,20 +116,20 @@ function Shell() {
       content = <Dashboard />;
       break;
     case "roadmap":
-      content = <Roadmap selected={Number(params.get("week"))} />;
+      content = <Roadmap key={params.get("week")} selected={Number(params.get("week"))} />;
       break;
     case "courses":
       content = params.get("lesson") ? (
         <LessonDetail id={params.get("lesson")!} />
       ) : (
-        <Courses level={Number(params.get("level"))} />
+        <Courses key={params.get("level")} level={Number(params.get("level"))} />
       );
       break;
     case "planner":
       content = <Planner />;
       break;
     case "projects":
-      content = <Projects selected={params.get("id") ?? ""} />;
+      content = <Projects key={params.get("id")} selected={params.get("id") ?? ""} />;
       break;
     case "skills":
       content = <Skills />;
@@ -124,7 +144,7 @@ function Shell() {
       content = <Career />;
       break;
     case "notes":
-      content = <Notes selected={params.get("id") ?? ""} />;
+      content = <Notes key={params.get("id")} selected={params.get("id") ?? ""} />;
       break;
     case "resources":
       content = <Resources />;
@@ -235,7 +255,7 @@ function Shell() {
                 : "Cloud · Supabase"}
             </span>
             <span className="save-status" role="status">
-              {busy ? "Saving…" : "Saved"}
+              {busy ? "Saving…" : error ? "Needs attention" : "Saved"}
             </span>
             <button
               aria-label={`Notifications, ${unread} unread`}

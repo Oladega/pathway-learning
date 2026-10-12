@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { useStore } from "../components/provider";
 import { Header, Field, Progress, Modal, str, num } from "../components/ui";
@@ -234,7 +234,16 @@ export function Onboarding() {
 export function SettingsPage() {
   const { state, mutate, importData, reset, busy } = useStore(),
     [confirm, setConfirm] = useState(false),
-    [fileError, setFileError] = useState("");
+    [fileError, setFileError] = useState(""),
+    [accountConfirm, setAccountConfirm] = useState(false),
+    [canDelete, setCanDelete] = useState(false);
+  useEffect(() => {
+    if (mode === "cloud")
+      void fetch("/api/config")
+        .then((r) => r.json())
+        .then((r) => setCanDelete(r.accountDeletion))
+        .catch(() => setCanDelete(false));
+  }, []);
   const p = state.preferences;
   function exportData() {
     const url = URL.createObjectURL(
@@ -594,13 +603,60 @@ export function SettingsPage() {
           {mode === "local" ? "Reset local data" : "Delete cloud learning data"}
         </button>
         {mode === "cloud" && (
-          <p className="muted">
-            Deleting the Supabase Auth identity additionally requires the
-            project administrator; no service-role credential is exposed in this
-            app.
-          </p>
+          <div>
+            <p className="muted">
+              {canDelete
+                ? "Account deletion will remove your sign-in identity and all personal learning records."
+                : "Self-service account deletion needs a server-side Supabase administrator key. Cloud learning-data deletion remains available."}
+            </p>
+            <button
+              className="danger"
+              disabled={!canDelete || busy}
+              onClick={() => setAccountConfirm(true)}
+            >
+              Delete my account
+            </button>
+          </div>
         )}
       </section>
+      <Modal
+        title="Delete account permanently"
+        open={accountConfirm}
+        onClose={() => setAccountConfirm(false)}
+      >
+        <form
+          onSubmit={async (e) => {
+            e.preventDefault();
+            const f = new FormData(e.currentTarget);
+            try {
+              const auth = await supabase().auth.getSession();
+              const response = await fetch("/api/account", {
+                method: "DELETE",
+                headers: {
+                  "Content-Type": "application/json",
+                  Authorization: `Bearer ${auth.data.session?.access_token}`,
+                },
+                body: JSON.stringify({ confirmation: str(f, "confirmation") }),
+              });
+              const data = await response.json();
+              if (!response.ok) throw Error(data.error);
+              await supabase().auth.signOut();
+            } catch (e) {
+              setFileError(e instanceof Error ? e.message : "Deletion failed");
+            }
+            setAccountConfirm(false);
+          }}
+        >
+          <p>
+            This action removes your identity and all learning data. Export a
+            backup first.
+          </p>
+          <Field label="Type DELETE to confirm">
+            <input name="confirmation" pattern="DELETE" required />
+          </Field>
+          <button className="danger">Permanently delete my account</button>
+        </form>
+      </Modal>
       <Modal
         title="Confirm data deletion"
         open={confirm}

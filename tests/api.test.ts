@@ -61,16 +61,14 @@ describe("Verified authorization boundary", () => {
 describe("Mentor provider without paid calls", () => {
   it("uses a server-only key, output limit and verified response shape", async () => {
     vi.stubEnv("OPENAI_API_KEY", "test-key");
-    const fetcher = vi
-      .fn()
-      .mockResolvedValue({
-        ok: true,
-        json: async () => ({
-          choices: [
-            { message: { content: "First hint: inspect the return value." } },
-          ],
-        }),
-      });
+    const fetcher = vi.fn().mockResolvedValue({
+      ok: true,
+      json: async () => ({
+        choices: [
+          { message: { content: "First hint: inspect the return value." } },
+        ],
+      }),
+    });
     vi.stubGlobal("fetch", fetcher);
     const text = await new OpenAIMentor().answer("Hints only", [
       { role: "user", content: "Help" },

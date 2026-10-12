@@ -26,7 +26,7 @@
       "Split bills fairly with rounded currency",
       "Guessing game terminates correctly with invalid-input handling"
     ],
-    "exercise": "Build calculator, expense splitter, and number guessing game incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Handle all four arithmetic operations and zero division. Next, split bills fairly with rounded currency. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how python syntax works using your implementation.",
       "Which failure modes arise in calculator, expense splitter, and number guessing game, and how did your tests cover them?",
@@ -44,7 +44,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": []
+    "prerequisites": [],
+    "practiceExercises": [
+      "1. Handle all four arithmetic operations and zero division — demonstrate this with a reproducible test or recorded output.",
+      "2. Split bills fairly with rounded currency — demonstrate this with a reproducible test or recorded output.",
+      "3. Guessing game terminates correctly with invalid-input handling — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 2,
@@ -73,7 +84,7 @@
       "Filter by status and search text",
       "Reject empty titles and duplicate identifiers"
     ],
-    "exercise": "Build cli task manager incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Create, list, update and delete tasks. Next, filter by status and search text. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how lists works using your implementation.",
       "Which failure modes arise in cli task manager, and how did your tests cover them?",
@@ -91,7 +102,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [1]
+    "prerequisites": [1],
+    "practiceExercises": [
+      "1. Create, list, update and delete tasks — demonstrate this with a reproducible test or recorded output.",
+      "2. Filter by status and search text — demonstrate this with a reproducible test or recorded output.",
+      "3. Reject empty titles and duplicate identifiers — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 3,
@@ -113,7 +135,7 @@
       "Persist CSV and JSON records across restarts",
       "Summarize spending and handle corrupt files with automated tests"
     ],
-    "exercise": "Build cli expense tracker with data persistence incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Add categorized expense records. Next, persist CSV and JSON records across restarts. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how functions works using your implementation.",
       "Which failure modes arise in cli expense tracker with data persistence, and how did your tests cover them?",
@@ -131,7 +153,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [2]
+    "prerequisites": [2],
+    "practiceExercises": [
+      "1. Add categorized expense records — demonstrate this with a reproducible test or recorded output.",
+      "2. Persist CSV and JSON records across restarts — demonstrate this with a reproducible test or recorded output.",
+      "3. Summarize spending and handle corrupt files with automated tests — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 4,
@@ -152,7 +185,7 @@
       "Reject overdrafts and invalid amounts",
       "Test deposits, withdrawals and transfers with pytest"
     ],
-    "exercise": "Build banking account simulator with tests incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Encapsulate account balance. Next, reject overdrafts and invalid amounts. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how oop works using your implementation.",
       "Which failure modes arise in banking account simulator with tests, and how did your tests cover them?",
@@ -170,7 +203,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [3]
+    "prerequisites": [3],
+    "practiceExercises": [
+      "1. Encapsulate account balance — demonstrate this with a reproducible test or recorded output.",
+      "2. Reject overdrafts and invalid amounts — demonstrate this with a reproducible test or recorded output.",
+      "3. Test deposits, withdrawals and transfers with pytest — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 5,
@@ -191,7 +235,7 @@
       "Solve 10 easy problems with tests",
       "Document time and space complexity for each"
     ],
-    "exercise": "Build implement algorithms and solve 10 easy coding problems incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement search and sorting without library shortcuts. Next, solve 10 easy problems with tests. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how arrays works using your implementation.",
       "Which failure modes arise in implement algorithms and solve 10 easy coding problems, and how did your tests cover them?",
@@ -209,7 +253,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [4]
+    "prerequisites": [4],
+    "practiceExercises": [
+      "1. Implement search and sorting without library shortcuts — demonstrate this with a reproducible test or recorded output.",
+      "2. Solve 10 easy problems with tests — demonstrate this with a reproducible test or recorded output.",
+      "3. Document time and space complexity for each — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 6,
@@ -229,7 +284,7 @@
       "Discard forward history after new navigation",
       "Test empty stacks and repeated navigation"
     ],
-    "exercise": "Build browser-history simulator incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement back and forward navigation using stacks. Next, discard forward history after new navigation. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how stacks works using your implementation.",
       "Which failure modes arise in browser-history simulator, and how did your tests cover them?",
@@ -247,7 +302,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [5]
+    "prerequisites": [5],
+    "practiceExercises": [
+      "1. Implement back and forward navigation using stacks — demonstrate this with a reproducible test or recorded output.",
+      "2. Discard forward history after new navigation — demonstrate this with a reproducible test or recorded output.",
+      "3. Test empty stacks and repeated navigation — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 7,
@@ -267,7 +333,7 @@
       "Cache results with an expiry",
       "Handle timeouts, invalid currencies and unavailable service"
     ],
-    "exercise": "Build currency-rate fetcher with caching and error handling incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Fetch and parse currency rates. Next, cache results with an expiry. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how http works using your implementation.",
       "Which failure modes arise in currency-rate fetcher with caching and error handling, and how did your tests cover them?",
@@ -285,7 +351,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [6]
+    "prerequisites": [6],
+    "practiceExercises": [
+      "1. Fetch and parse currency rates — demonstrate this with a reproducible test or recorded output.",
+      "2. Cache results with an expiry — demonstrate this with a reproducible test or recorded output.",
+      "3. Handle timeouts, invalid currencies and unavailable service — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 8,
@@ -305,7 +382,7 @@
       "Include automated tests and persisted records",
       "Publish README, installation steps and clean Git history"
     ],
-    "exercise": "Build complete python personal finance cli incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Integrate budget, expenses and summaries. Next, include automated tests and persisted records. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how project structure works using your implementation.",
       "Which failure modes arise in complete python personal finance cli, and how did your tests cover them?",
@@ -323,7 +400,18 @@
         "url": "https://docs.pytest.org/en/stable/"
       }
     ],
-    "prerequisites": [7]
+    "prerequisites": [7],
+    "practiceExercises": [
+      "1. Integrate budget, expenses and summaries — demonstrate this with a reproducible test or recorded output.",
+      "2. Include automated tests and persisted records — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish README, installation steps and clean Git history — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 9,
@@ -343,7 +431,7 @@
       "Handle status codes and pagination",
       "Test offline failure with mocked responses"
     ],
-    "exercise": "Build public api client incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Send authenticated and public HTTP requests. Next, handle status codes and pagination. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how http works using your implementation.",
       "Which failure modes arise in public api client, and how did your tests cover them?",
@@ -365,7 +453,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [8]
+    "prerequisites": [8],
+    "practiceExercises": [
+      "1. Send authenticated and public HTTP requests — demonstrate this with a reproducible test or recorded output.",
+      "2. Handle status codes and pagination — demonstrate this with a reproducible test or recorded output.",
+      "3. Test offline failure with mocked responses — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 10,
@@ -385,7 +484,7 @@
       "Validate request bodies with Pydantic",
       "Return documented errors and OpenAPI examples"
     ],
-    "exercise": "Build notes crud api incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Expose create, read, update and delete endpoints. Next, validate request bodies with Pydantic. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how fastapi works using your implementation.",
       "Which failure modes arise in notes crud api, and how did your tests cover them?",
@@ -407,7 +506,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [9]
+    "prerequisites": [9],
+    "practiceExercises": [
+      "1. Expose create, read, update and delete endpoints — demonstrate this with a reproducible test or recorded output.",
+      "2. Validate request bodies with Pydantic — demonstrate this with a reproducible test or recorded output.",
+      "3. Return documented errors and OpenAPI examples — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 11,
@@ -428,7 +538,7 @@
       "Write join and aggregate queries",
       "Demonstrate indexes and transaction rollback"
     ],
-    "exercise": "Build finance application database schema incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Model users, categories and transactions with foreign keys. Next, write join and aggregate queries. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how sql works using your implementation.",
       "Which failure modes arise in finance application database schema, and how did your tests cover them?",
@@ -450,7 +560,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [10]
+    "prerequisites": [10],
+    "practiceExercises": [
+      "1. Model users, categories and transactions with foreign keys — demonstrate this with a reproducible test or recorded output.",
+      "2. Write join and aggregate queries — demonstrate this with a reproducible test or recorded output.",
+      "3. Demonstrate indexes and transaction rollback — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 12,
@@ -469,7 +590,7 @@
       "Run upgrade and downgrade migrations",
       "Test relations and isolation on a fresh database"
     ],
-    "exercise": "Build persistent fastapi application incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Persist API records with SQLAlchemy. Next, run upgrade and downgrade migrations. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how sqlalchemy works using your implementation.",
       "Which failure modes arise in persistent fastapi application, and how did your tests cover them?",
@@ -491,7 +612,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [11]
+    "prerequisites": [11],
+    "practiceExercises": [
+      "1. Persist API records with SQLAlchemy — demonstrate this with a reproducible test or recorded output.",
+      "2. Run upgrade and downgrade migrations — demonstrate this with a reproducible test or recorded output.",
+      "3. Test relations and isolation on a fresh database — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 13,
@@ -516,7 +648,7 @@
       "Implement expiring authentication tokens",
       "Prove one user cannot access another user’s records"
     ],
-    "exercise": "Build authentication and user-specific access control incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Hash passwords using a maintained library. Next, implement expiring authentication tokens. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how authentication works using your implementation.",
       "Which failure modes arise in authentication and user-specific access control, and how did your tests cover them?",
@@ -538,7 +670,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [12]
+    "prerequisites": [12],
+    "practiceExercises": [
+      "1. Hash passwords using a maintained library — demonstrate this with a reproducible test or recorded output.",
+      "2. Implement expiring authentication tokens — demonstrate this with a reproducible test or recorded output.",
+      "3. Prove one user cannot access another user’s records — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 14,
@@ -558,7 +701,7 @@
       "Mock third-party services",
       "Run integration tests against isolated database fixtures"
     ],
-    "exercise": "Build backend automated testing suite incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Test success and failure for each API route. Next, mock third-party services. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how unit tests works using your implementation.",
       "Which failure modes arise in backend automated testing suite, and how did your tests cover them?",
@@ -580,7 +723,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [13]
+    "prerequisites": [13],
+    "practiceExercises": [
+      "1. Test success and failure for each API route — demonstrate this with a reproducible test or recorded output.",
+      "2. Mock third-party services — demonstrate this with a reproducible test or recorded output.",
+      "3. Run integration tests against isolated database fixtures — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 15,
@@ -605,7 +759,7 @@
       "Retry transient failures with backoff",
       "Prevent duplicate writes and test cancellation"
     ],
-    "exercise": "Build background data-fetching service incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Fetch multiple sources concurrently with bounded concurrency. Next, retry transient failures with backoff. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how async python works using your implementation.",
       "Which failure modes arise in background data-fetching service, and how did your tests cover them?",
@@ -627,7 +781,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [14]
+    "prerequisites": [14],
+    "practiceExercises": [
+      "1. Fetch multiple sources concurrently with bounded concurrency — demonstrate this with a reproducible test or recorded output.",
+      "2. Retry transient failures with backoff — demonstrate this with a reproducible test or recorded output.",
+      "3. Prevent duplicate writes and test cancellation — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 16,
@@ -652,7 +817,7 @@
       "Enforce ownership and validate inputs",
       "Publish architecture, integration tests and setup guide"
     ],
-    "exercise": "Build multi-user finance api incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Deploy multi-user transaction endpoints with secrets. Next, enforce ownership and validate inputs. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how backend architecture works using your implementation.",
       "Which failure modes arise in multi-user finance api, and how did your tests cover them?",
@@ -674,7 +839,18 @@
         "url": "https://docs.sqlalchemy.org/en/20/tutorial/"
       }
     ],
-    "prerequisites": [15]
+    "prerequisites": [15],
+    "practiceExercises": [
+      "1. Deploy multi-user transaction endpoints with secrets — demonstrate this with a reproducible test or recorded output.",
+      "2. Enforce ownership and validate inputs — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish architecture, integration tests and setup guide — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 17,
@@ -693,7 +869,7 @@
       "Show loading, success, empty and error states",
       "Use async/await and cancel stale requests"
     ],
-    "exercise": "Build api-driven dashboard incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Render data from a public API. Next, show loading, success, empty and error states. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how javascript works using your implementation.",
       "Which failure modes arise in api-driven dashboard, and how did your tests cover them?",
@@ -715,7 +891,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [16]
+    "prerequisites": [16],
+    "practiceExercises": [
+      "1. Render data from a public API — demonstrate this with a reproducible test or recorded output.",
+      "2. Show loading, success, empty and error states — demonstrate this with a reproducible test or recorded output.",
+      "3. Use async/await and cancel stale requests — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 18,
@@ -735,7 +922,7 @@
       "Use interfaces, unions and generic helpers",
       "Pass strict type checking without unsafe casts"
     ],
-    "exercise": "Build typescript dashboard incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Type API responses and dashboard components. Next, use interfaces, unions and generic helpers. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how typescript works using your implementation.",
       "Which failure modes arise in typescript dashboard, and how did your tests cover them?",
@@ -757,7 +944,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [17]
+    "prerequisites": [17],
+    "practiceExercises": [
+      "1. Type API responses and dashboard components — demonstrate this with a reproducible test or recorded output.",
+      "2. Use interfaces, unions and generic helpers — demonstrate this with a reproducible test or recorded output.",
+      "3. Pass strict type checking without unsafe casts — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 19,
@@ -777,7 +975,7 @@
       "Add filters, sorting and editing with React state",
       "Test user actions and empty transactions"
     ],
-    "exercise": "Build interactive transaction dashboard incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Build reusable transaction components. Next, add filters, sorting and editing with React state. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how react components works using your implementation.",
       "Which failure modes arise in interactive transaction dashboard, and how did your tests cover them?",
@@ -799,7 +997,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [18]
+    "prerequisites": [18],
+    "practiceExercises": [
+      "1. Build reusable transaction components — demonstrate this with a reproducible test or recorded output.",
+      "2. Add filters, sorting and editing with React state — demonstrate this with a reproducible test or recorded output.",
+      "3. Test user actions and empty transactions — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 20,
@@ -818,7 +1027,7 @@
       "Handle network errors with retry and feedback",
       "Persist transaction changes through refresh"
     ],
-    "exercise": "Build connect frontend to finance backend incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Connect frontend reads and mutations to finance API. Next, handle network errors with retry and feedback. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how api integration works using your implementation.",
       "Which failure modes arise in connect frontend to finance backend, and how did your tests cover them?",
@@ -840,7 +1049,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [19]
+    "prerequisites": [19],
+    "practiceExercises": [
+      "1. Connect frontend reads and mutations to finance API — demonstrate this with a reproducible test or recorded output.",
+      "2. Handle network errors with retry and feedback — demonstrate this with a reproducible test or recorded output.",
+      "3. Persist transaction changes through refresh — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 21,
@@ -859,7 +1079,7 @@
       "Explain server and client boundaries",
       "Support direct URLs and page refresh"
     ],
-    "exercise": "Build next.js application incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement routes and layouts in Next.js. Next, explain server and client boundaries. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how next.js routing works using your implementation.",
       "Which failure modes arise in next.js application, and how did your tests cover them?",
@@ -881,7 +1101,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [20]
+    "prerequisites": [20],
+    "practiceExercises": [
+      "1. Implement routes and layouts in Next.js — demonstrate this with a reproducible test or recorded output.",
+      "2. Explain server and client boundaries — demonstrate this with a reproducible test or recorded output.",
+      "3. Support direct URLs and page refresh — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 22,
@@ -901,7 +1132,7 @@
       "Provide labels, keyboard access and error messages",
       "Persist settings and test form failure states"
     ],
-    "exercise": "Build profile and settings workflows incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Validate profile and settings forms. Next, provide labels, keyboard access and error messages. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how forms works using your implementation.",
       "Which failure modes arise in profile and settings workflows, and how did your tests cover them?",
@@ -923,7 +1154,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [21]
+    "prerequisites": [21],
+    "practiceExercises": [
+      "1. Validate profile and settings forms — demonstrate this with a reproducible test or recorded output.",
+      "2. Provide labels, keyboard access and error messages — demonstrate this with a reproducible test or recorded output.",
+      "3. Persist settings and test form failure states — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 23,
@@ -943,7 +1185,7 @@
       "Run tests and build in CI",
       "Document environment variables and rollback procedure"
     ],
-    "exercise": "Build deployed frontend and backend incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Deploy separate frontend and backend services. Next, run tests and build in CI. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how ci/cd works using your implementation.",
       "Which failure modes arise in deployed frontend and backend, and how did your tests cover them?",
@@ -965,7 +1207,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [22]
+    "prerequisites": [22],
+    "practiceExercises": [
+      "1. Deploy separate frontend and backend services — demonstrate this with a reproducible test or recorded output.",
+      "2. Run tests and build in CI — demonstrate this with a reproducible test or recorded output.",
+      "3. Document environment variables and rollback procedure — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 24,
@@ -985,7 +1238,7 @@
       "Run end-to-end tests and deploy live demo",
       "Publish architecture and technical case study"
     ],
-    "exercise": "Build full-stack personal finance saas incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Deliver auth, transactions, categorization and analytics. Next, run end-to-end tests and deploy live demo. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how integration works using your implementation.",
       "Which failure modes arise in full-stack personal finance saas, and how did your tests cover them?",
@@ -1007,7 +1260,18 @@
         "url": "https://nextjs.org/docs"
       }
     ],
-    "prerequisites": [23]
+    "prerequisites": [23],
+    "practiceExercises": [
+      "1. Deliver auth, transactions, categorization and analytics — demonstrate this with a reproducible test or recorded output.",
+      "2. Run end-to-end tests and deploy live demo — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish architecture and technical case study — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 25,
@@ -1028,7 +1292,7 @@
       "Explain token budget and context limitations",
       "Compare output against source and record inaccuracies"
     ],
-    "exercise": "Build document summarizer incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Summarize a document with bounded inputs. Next, explain token budget and context limitations. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how llms works using your implementation.",
       "Which failure modes arise in document summarizer, and how did your tests cover them?",
@@ -1050,7 +1314,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [24]
+    "prerequisites": [24],
+    "practiceExercises": [
+      "1. Summarize a document with bounded inputs — demonstrate this with a reproducible test or recorded output.",
+      "2. Explain token budget and context limitations — demonstrate this with a reproducible test or recorded output.",
+      "3. Compare output against source and record inaccuracies — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 26,
@@ -1070,7 +1345,7 @@
       "Implement tool calls with permission checks",
       "Stream output and handle model API failures"
     ],
-    "exercise": "Build ai financial assistant incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Validate structured model outputs. Next, implement tool calls with permission checks. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how model apis works using your implementation.",
       "Which failure modes arise in ai financial assistant, and how did your tests cover them?",
@@ -1092,7 +1367,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [25]
+    "prerequisites": [25],
+    "practiceExercises": [
+      "1. Validate structured model outputs — demonstrate this with a reproducible test or recorded output.",
+      "2. Implement tool calls with permission checks — demonstrate this with a reproducible test or recorded output.",
+      "3. Stream output and handle model API failures — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 27,
@@ -1111,7 +1397,7 @@
       "Rank results by cosine similarity",
       "Test relevant and irrelevant queries with documented examples"
     ],
-    "exercise": "Build semantic search engine incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Embed and index a document collection. Next, rank results by cosine similarity. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how embeddings works using your implementation.",
       "Which failure modes arise in semantic search engine, and how did your tests cover them?",
@@ -1133,7 +1419,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [26]
+    "prerequisites": [26],
+    "practiceExercises": [
+      "1. Embed and index a document collection — demonstrate this with a reproducible test or recorded output.",
+      "2. Rank results by cosine similarity — demonstrate this with a reproducible test or recorded output.",
+      "3. Test relevant and irrelevant queries with documented examples — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 28,
@@ -1154,7 +1451,7 @@
       "Return answers with source citations",
       "Evaluate retrieval and refuse unsupported answers"
     ],
-    "exercise": "Build document q&a system incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Chunk documents and index with pgvector. Next, return answers with source citations. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how rag works using your implementation.",
       "Which failure modes arise in document q&a system, and how did your tests cover them?",
@@ -1176,7 +1473,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [27]
+    "prerequisites": [27],
+    "practiceExercises": [
+      "1. Chunk documents and index with pgvector — demonstrate this with a reproducible test or recorded output.",
+      "2. Return answers with source citations — demonstrate this with a reproducible test or recorded output.",
+      "3. Evaluate retrieval and refuse unsupported answers — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 29,
@@ -1196,7 +1504,7 @@
       "Require explicit approval before consequential writes",
       "Test retries, cancellation and invalid tool output"
     ],
-    "exercise": "Build task-executing assistant incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Manage workflow state and tool permissions. Next, require explicit approval before consequential writes. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how ai agents works using your implementation.",
       "Which failure modes arise in task-executing assistant, and how did your tests cover them?",
@@ -1218,7 +1526,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [28]
+    "prerequisites": [28],
+    "practiceExercises": [
+      "1. Manage workflow state and tool permissions — demonstrate this with a reproducible test or recorded output.",
+      "2. Require explicit approval before consequential writes — demonstrate this with a reproducible test or recorded output.",
+      "3. Test retries, cancellation and invalid tool output — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 30,
@@ -1237,7 +1556,7 @@
       "Measure retrieval quality and task success",
       "Publish failure analysis and reproducible evaluation command"
     ],
-    "exercise": "Build 50-case ai evaluation suite incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Create 50 representative evaluation cases. Next, measure retrieval quality and task success. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how evaluation datasets works using your implementation.",
       "Which failure modes arise in 50-case ai evaluation suite, and how did your tests cover them?",
@@ -1259,7 +1578,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [29]
+    "prerequisites": [29],
+    "practiceExercises": [
+      "1. Create 50 representative evaluation cases — demonstrate this with a reproducible test or recorded output.",
+      "2. Measure retrieval quality and task success — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish failure analysis and reproducible evaluation command — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 31,
@@ -1284,7 +1614,7 @@
       "Trace latency, token use and errors",
       "Test prompt injection and restricted-tool requests"
     ],
-    "exercise": "Build secure, observable ai agent incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Enforce tool permissions and rate limits. Next, trace latency, token use and errors. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how prompt injection works using your implementation.",
       "Which failure modes arise in secure, observable ai agent, and how did your tests cover them?",
@@ -1306,7 +1636,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [30]
+    "prerequisites": [30],
+    "practiceExercises": [
+      "1. Enforce tool permissions and rate limits — demonstrate this with a reproducible test or recorded output.",
+      "2. Trace latency, token use and errors — demonstrate this with a reproducible test or recorded output.",
+      "3. Test prompt injection and restricted-tool requests — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 32,
@@ -1324,7 +1665,7 @@
       "Run 50-case evaluations and log failures",
       "Deploy secure service and publish technical case study"
     ],
-    "exercise": "Build ai financial research assistant incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Integrate upload, retrieval, citations and calculation tools. Next, run 50-case evaluations and log failures. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how system integration and deployment works using your implementation.",
       "Which failure modes arise in ai financial research assistant, and how did your tests cover them?",
@@ -1346,7 +1687,18 @@
         "url": "https://github.com/pgvector/pgvector"
       }
     ],
-    "prerequisites": [31]
+    "prerequisites": [31],
+    "practiceExercises": [
+      "1. Integrate upload, retrieval, citations and calculation tools — demonstrate this with a reproducible test or recorded output.",
+      "2. Run 50-case evaluations and log failures — demonstrate this with a reproducible test or recorded output.",
+      "3. Deploy secure service and publish technical case study — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 33,
@@ -1366,7 +1718,7 @@
       "Compute cosine similarity and handle zero vectors",
       "Verify numerical output against NumPy"
     ],
-    "exercise": "Build vector similarity implementation incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement vector and matrix operations. Next, compute cosine similarity and handle zero vectors. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how vectors works using your implementation.",
       "Which failure modes arise in vector similarity implementation, and how did your tests cover them?",
@@ -1384,7 +1736,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [32]
+    "prerequisites": [32],
+    "practiceExercises": [
+      "1. Implement vector and matrix operations — demonstrate this with a reproducible test or recorded output.",
+      "2. Compute cosine similarity and handle zero vectors — demonstrate this with a reproducible test or recorded output.",
+      "3. Verify numerical output against NumPy — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 34,
@@ -1404,7 +1767,7 @@
       "Compute summary statistics and uncertainty",
       "Publish reproducible notebook with visualizations"
     ],
-    "exercise": "Build dataset analysis notebook incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Describe distributions and sampling assumptions. Next, compute summary statistics and uncertainty. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how probability works using your implementation.",
       "Which failure modes arise in dataset analysis notebook, and how did your tests cover them?",
@@ -1422,7 +1785,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [33]
+    "prerequisites": [33],
+    "practiceExercises": [
+      "1. Describe distributions and sampling assumptions — demonstrate this with a reproducible test or recorded output.",
+      "2. Compute summary statistics and uncertainty — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish reproducible notebook with visualizations — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 35,
@@ -1442,7 +1816,7 @@
       "Check analytical gradients numerically",
       "Plot loss convergence and compare baseline"
     ],
-    "exercise": "Build linear regression from scratch incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement gradient descent for linear regression. Next, check analytical gradients numerically. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how calculus works using your implementation.",
       "Which failure modes arise in linear regression from scratch, and how did your tests cover them?",
@@ -1460,7 +1834,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [34]
+    "prerequisites": [34],
+    "practiceExercises": [
+      "1. Implement gradient descent for linear regression — demonstrate this with a reproducible test or recorded output.",
+      "2. Check analytical gradients numerically — demonstrate this with a reproducible test or recorded output.",
+      "3. Plot loss convergence and compare baseline — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 36,
@@ -1479,7 +1864,7 @@
       "Train a regression baseline and calculate MAE/RMSE",
       "Explain errors and model limitations"
     ],
-    "exercise": "Build financial prediction model incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Split train and holdout data before fitting. Next, train a regression baseline and calculate MAE/RMSE. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how supervised learning works using your implementation.",
       "Which failure modes arise in financial prediction model, and how did your tests cover them?",
@@ -1497,7 +1882,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [35]
+    "prerequisites": [35],
+    "practiceExercises": [
+      "1. Split train and holdout data before fitting — demonstrate this with a reproducible test or recorded output.",
+      "2. Train a regression baseline and calculate MAE/RMSE — demonstrate this with a reproducible test or recorded output.",
+      "3. Explain errors and model limitations — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 37,
@@ -1516,7 +1912,7 @@
       "Compare precision, recall and class imbalance",
       "Publish confusion matrices and reproducible splits"
     ],
-    "exercise": "Build transaction anomaly classifier incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Train tree and random-forest classifiers. Next, compare precision, recall and class imbalance. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how classification works using your implementation.",
       "Which failure modes arise in transaction anomaly classifier, and how did your tests cover them?",
@@ -1534,7 +1930,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [36]
+    "prerequisites": [36],
+    "practiceExercises": [
+      "1. Train tree and random-forest classifiers — demonstrate this with a reproducible test or recorded output.",
+      "2. Compare precision, recall and class imbalance — demonstrate this with a reproducible test or recorded output.",
+      "3. Publish confusion matrices and reproducible splits — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 38,
@@ -1553,7 +1960,7 @@
       "Compare feature sets using cross-validation",
       "Detect leakage and serialize reproducible pipeline"
     ],
-    "exercise": "Build improved ml training pipeline incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Fit preprocessing only on training folds. Next, compare feature sets using cross-validation. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how feature engineering works using your implementation.",
       "Which failure modes arise in improved ml training pipeline, and how did your tests cover them?",
@@ -1571,7 +1978,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [37]
+    "prerequisites": [37],
+    "practiceExercises": [
+      "1. Fit preprocessing only on training folds — demonstrate this with a reproducible test or recorded output.",
+      "2. Compare feature sets using cross-validation — demonstrate this with a reproducible test or recorded output.",
+      "3. Detect leakage and serialize reproducible pipeline — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 39,
@@ -1590,7 +2008,7 @@
       "Evaluate calibration and subgroup errors",
       "Document limitations and recommended improvements"
     ],
-    "exercise": "Build comparative model evaluation report incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Compare at least three models on held-out data. Next, evaluate calibration and subgroup errors. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how model evaluation works using your implementation.",
       "Which failure modes arise in comparative model evaluation report, and how did your tests cover them?",
@@ -1608,7 +2026,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [38]
+    "prerequisites": [38],
+    "practiceExercises": [
+      "1. Compare at least three models on held-out data — demonstrate this with a reproducible test or recorded output.",
+      "2. Evaluate calibration and subgroup errors — demonstrate this with a reproducible test or recorded output.",
+      "3. Document limitations and recommended improvements — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 40,
@@ -1627,7 +2056,7 @@
       "Validate inputs and preserve reproducible model artifacts",
       "Deploy and document metrics and limitations"
     ],
-    "exercise": "Build deployed risk classification model incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Serve versioned inference through an API. Next, validate inputs and preserve reproducible model artifacts. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how model serving works using your implementation.",
       "Which failure modes arise in deployed risk classification model, and how did your tests cover them?",
@@ -1645,7 +2074,18 @@
         "url": "https://scikit-learn.org/stable/user_guide.html"
       }
     ],
-    "prerequisites": [39]
+    "prerequisites": [39],
+    "practiceExercises": [
+      "1. Serve versioned inference through an API — demonstrate this with a reproducible test or recorded output.",
+      "2. Validate inputs and preserve reproducible model artifacts — demonstrate this with a reproducible test or recorded output.",
+      "3. Deploy and document metrics and limitations — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 41,
@@ -1665,7 +2105,7 @@
       "Explain tensor shapes, activations and backpropagation",
       "Record train/validation loss and reproducible seed"
     ],
-    "exercise": "Build pytorch neural network incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Train a small PyTorch neural network. Next, explain tensor shapes, activations and backpropagation. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how tensors works using your implementation.",
       "Which failure modes arise in pytorch neural network, and how did your tests cover them?",
@@ -1687,7 +2127,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [40]
+    "prerequisites": [40],
+    "practiceExercises": [
+      "1. Train a small PyTorch neural network — demonstrate this with a reproducible test or recorded output.",
+      "2. Explain tensor shapes, activations and backpropagation — demonstrate this with a reproducible test or recorded output.",
+      "3. Record train/validation loss and reproducible seed — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 42,
@@ -1707,7 +2158,7 @@
       "Save and restore optimizer and model checkpoints",
       "Evaluate text classifier against baseline"
     ],
-    "exercise": "Build text classification model incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Build dataset and DataLoader pipeline. Next, save and restore optimizer and model checkpoints. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how datasets works using your implementation.",
       "Which failure modes arise in text classification model, and how did your tests cover them?",
@@ -1729,7 +2180,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [41]
+    "prerequisites": [41],
+    "practiceExercises": [
+      "1. Build dataset and DataLoader pipeline — demonstrate this with a reproducible test or recorded output.",
+      "2. Save and restore optimizer and model checkpoints — demonstrate this with a reproducible test or recorded output.",
+      "3. Evaluate text classifier against baseline — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 43,
@@ -1748,7 +2210,7 @@
       "Verify masks and tensor shapes with tests",
       "Explain tokenization and transformer components"
     ],
-    "exercise": "Build attention implementation incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Implement scaled dot-product attention. Next, verify masks and tensor shapes with tests. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how attention works using your implementation.",
       "Which failure modes arise in attention implementation, and how did your tests cover them?",
@@ -1770,7 +2232,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [42]
+    "prerequisites": [42],
+    "practiceExercises": [
+      "1. Implement scaled dot-product attention — demonstrate this with a reproducible test or recorded output.",
+      "2. Verify masks and tensor shapes with tests — demonstrate this with a reproducible test or recorded output.",
+      "3. Explain tokenization and transformer components — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 44,
@@ -1789,7 +2262,7 @@
       "Serve a selected open-weight model through API",
       "Measure latency and handle bounded inputs"
     ],
-    "exercise": "Build open-weight model inference api incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Compare model licenses and resource requirements. Next, serve a selected open-weight model through API. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how hugging face models works using your implementation.",
       "Which failure modes arise in open-weight model inference api, and how did your tests cover them?",
@@ -1811,7 +2284,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [43]
+    "prerequisites": [43],
+    "practiceExercises": [
+      "1. Compare model licenses and resource requirements — demonstrate this with a reproducible test or recorded output.",
+      "2. Serve a selected open-weight model through API — demonstrate this with a reproducible test or recorded output.",
+      "3. Measure latency and handle bounded inputs — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 45,
@@ -1831,7 +2315,7 @@
       "Compare base and adapted model on fixed benchmark",
       "Record LoRA configuration, costs and regressions"
     ],
-    "exercise": "Build fine-tuned small model incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Fine-tune with held-out evaluation data. Next, compare base and adapted model on fixed benchmark. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how transfer learning works using your implementation.",
       "Which failure modes arise in fine-tuned small model, and how did your tests cover them?",
@@ -1853,7 +2337,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [44]
+    "prerequisites": [44],
+    "practiceExercises": [
+      "1. Fine-tune with held-out evaluation data — demonstrate this with a reproducible test or recorded output.",
+      "2. Compare base and adapted model on fixed benchmark — demonstrate this with a reproducible test or recorded output.",
+      "3. Record LoRA configuration, costs and regressions — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 46,
@@ -1873,7 +2368,7 @@
       "Document service boundaries and failure recovery",
       "Measure throughput and p95 latency under load"
     ],
-    "exercise": "Build scalable inference architecture incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Design bounded queues and cache strategy. Next, document service boundaries and failure recovery. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how ai system design works using your implementation.",
       "Which failure modes arise in scalable inference architecture, and how did your tests cover them?",
@@ -1895,7 +2390,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [45]
+    "prerequisites": [45],
+    "practiceExercises": [
+      "1. Design bounded queues and cache strategy — demonstrate this with a reproducible test or recorded output.",
+      "2. Document service boundaries and failure recovery — demonstrate this with a reproducible test or recorded output.",
+      "3. Measure throughput and p95 latency under load — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 47,
@@ -1916,7 +2422,7 @@
       "Track errors, tokens, latency and estimated cost",
       "Build dashboard with alert thresholds and redacted logs"
     ],
-    "exercise": "Build ai monitoring dashboard incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Trace requests across model and retrieval services. Next, track errors, tokens, latency and estimated cost. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how tracing works using your implementation.",
       "Which failure modes arise in ai monitoring dashboard, and how did your tests cover them?",
@@ -1938,7 +2444,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [46]
+    "prerequisites": [46],
+    "practiceExercises": [
+      "1. Trace requests across model and retrieval services — demonstrate this with a reproducible test or recorded output.",
+      "2. Track errors, tokens, latency and estimated cost — demonstrate this with a reproducible test or recorded output.",
+      "3. Build dashboard with alert thresholds and redacted logs — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 48,
@@ -1958,7 +2475,7 @@
       "Run tests and deployment pipeline in CI",
       "Keep secrets outside image and document rollback"
     ],
-    "exercise": "Build containerized ai service incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Build minimal Docker image with non-root user. Next, run tests and deployment pipeline in CI. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how docker works using your implementation.",
       "Which failure modes arise in containerized ai service, and how did your tests cover them?",
@@ -1980,7 +2497,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [47]
+    "prerequisites": [47],
+    "practiceExercises": [
+      "1. Build minimal Docker image with non-root user — demonstrate this with a reproducible test or recorded output.",
+      "2. Run tests and deployment pipeline in CI — demonstrate this with a reproducible test or recorded output.",
+      "3. Keep secrets outside image and document rollback — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 49,
@@ -2000,7 +2528,7 @@
       "Audit permissions and untrusted document handling",
       "Report bottlenecks and verify measured improvements"
     ],
-    "exercise": "Build ai system performance audit incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Load test representative workloads. Next, audit permissions and untrusted document handling. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how security works using your implementation.",
       "Which failure modes arise in ai system performance audit, and how did your tests cover them?",
@@ -2022,7 +2550,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [48]
+    "prerequisites": [48],
+    "practiceExercises": [
+      "1. Load test representative workloads — demonstrate this with a reproducible test or recorded output.",
+      "2. Audit permissions and untrusted document handling — demonstrate this with a reproducible test or recorded output.",
+      "3. Report bottlenecks and verify measured improvements — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 50,
@@ -2041,7 +2580,7 @@
       "Include architecture, tradeoffs, test results and limitations",
       "Link working demos and readable repositories"
     ],
-    "exercise": "Build three published engineering case studies incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Publish three engineering case studies. Next, include architecture, tradeoffs, test results and limitations. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how portfolio works using your implementation.",
       "Which failure modes arise in three published engineering case studies, and how did your tests cover them?",
@@ -2063,7 +2602,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [49]
+    "prerequisites": [49],
+    "practiceExercises": [
+      "1. Publish three engineering case studies — demonstrate this with a reproducible test or recorded output.",
+      "2. Include architecture, tradeoffs, test results and limitations — demonstrate this with a reproducible test or recorded output.",
+      "3. Link working demos and readable repositories — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 51,
@@ -2083,7 +2633,7 @@
       "Practice coding, SQL, debugging and system design",
       "Record feedback and a targeted improvement plan"
     ],
-    "exercise": "Build three mock engineering interviews incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Complete three mock engineering interviews. Next, practice coding, SQL, debugging and system design. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how coding interviews works using your implementation.",
       "Which failure modes arise in three mock engineering interviews, and how did your tests cover them?",
@@ -2105,7 +2655,18 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [50]
+    "prerequisites": [50],
+    "practiceExercises": [
+      "1. Complete three mock engineering interviews — demonstrate this with a reproducible test or recorded output.",
+      "2. Practice coding, SQL, debugging and system design — demonstrate this with a reproducible test or recorded output.",
+      "3. Record feedback and a targeted improvement plan — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   },
   {
     "number": 52,
@@ -2125,7 +2686,7 @@
       "Create targeted applications and networking plan",
       "Track applications, follow-ups and interview preparation"
     ],
-    "exercise": "Build job-ready engineering portfolio and application strategy incrementally; first implement the smallest working path, then test edge cases and rebuild one component without generated code.",
+    "exercise": "Independent coding challenge: Prepare technical CV and three-project portfolio. Next, create targeted applications and networking plan. Write tests for an invalid input and a boundary case before reviewing the reference implementation. Record whether you used no AI, hints, or substantial assistance.",
     "assessment": [
       "Explain how cv works using your implementation.",
       "Which failure modes arise in job-ready engineering portfolio and application strategy, and how did your tests cover them?",
@@ -2147,6 +2708,17 @@
         "url": "https://docs.docker.com/"
       }
     ],
-    "prerequisites": [51]
+    "prerequisites": [51],
+    "practiceExercises": [
+      "1. Prepare technical CV and three-project portfolio — demonstrate this with a reproducible test or recorded output.",
+      "2. Create targeted applications and networking plan — demonstrate this with a reproducible test or recorded output.",
+      "3. Track applications, follow-ups and interview preparation — demonstrate this with a reproducible test or recorded output."
+    ],
+    "hourAllocation": {
+      "concepts": 4,
+      "practice": 6,
+      "assessment": 2,
+      "project": 4
+    }
   }
 ]
